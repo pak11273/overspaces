@@ -3,11 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
     "build:styles": "postcss src/assets/css/tailwind.css -o src/assets/css/styles.css",
     "build:watch": "postcss src/assets/css/tailwind.css -o src/assets/css/styles.css --watch",
     "prebuild": "yarn build:styles",
     "prestart": "yarn build:styles",
+    "dev": "next",
     "build": "next build",
     "start": "next start"
   },
@@ -48,6 +48,7 @@
     "@fullhuman/postcss-purgecss": "^2.1.0",
     "autoprefixer": "^9.7.4",
     "postcss-cli": "^7.1.0",
+    "postcss-preset-env": "^6.7.0",
     "tailwindcss": "^1.2.0"
   }
 }
