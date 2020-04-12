@@ -1,5 +1,11 @@
 import "../public/assets/css/styles.css"
 
+import { ContextProvider } from "../context"
+
 export default function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+  return (
+    <ContextProvider>
+      <Component {...pageProps} />
+    </ContextProvider>
+  )
 }

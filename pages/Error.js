@@ -1,7 +1,7 @@
-import { Hero } from "../src/components"
+import { Hero } from "../components"
 import React from "react"
 
-export const Error = () => {
+export default () => {
   return (
     <section className="container mx-auto">
       <Hero

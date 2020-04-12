@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react"
 
 import data from "./data"
 
-const Context = React.createContext()
+const Context = React.createContext({})
 
 const ContextProvider = (props) => {
   const [state, setState] = useState({

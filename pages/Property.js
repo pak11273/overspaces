@@ -1,5 +1,3 @@
-import React from "react"
-
-export const Property = () => {
+export default () => {
   return <div>Property details page</div>
 }

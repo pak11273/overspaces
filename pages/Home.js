@@ -1,8 +1,8 @@
 import { FeaturedRooms, Services } from "../components"
 
-import Link from "react/link"
+import Link from "next/link"
 import React from "react"
-import logo from "../public/overspaces.jpg"
+import logo from "../public/assets/images/overspaces.jpg"
 
 export function Home() {
   return (
