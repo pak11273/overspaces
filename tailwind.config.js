@@ -3,5 +3,5 @@ module.exports = {
     extend: {},
   },
   variants: {},
-  plugins: ["tailwindcss", "postcss-preset-env"],
+  plugins: [],
 }

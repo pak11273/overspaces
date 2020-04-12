@@ -3,16 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "build:styles": "postcss src/assets/css/tailwind.css -o src/assets/css/styles.css",
-    "build:watch": "postcss src/assets/css/tailwind.css -o src/assets/css/styles.css --watch",
-    "prebuild": "yarn build:styles",
-    "prestart": "yarn build:styles",
+    "//": "postcss assets/css/tailwind.css -o assets/css/styles.css",
+    "//": "postcss assets/css/tailwind.css -o assets/css/styles.css --watch",
+    "//": "yarn build:styles",
+    "//": "yarn build:styles",
     "dev": "next",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
-    "@next/mdx": "^9.3.4",
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -45,9 +44,10 @@
     ]
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^2.1.0",
-    "autoprefixer": "^9.7.4",
+    "@fullhuman/postcss-purgecss": "^2.1.2",
+    "autoprefixer": "^9.7.6",
     "postcss-cli": "^7.1.0",
+    "postcss-import": "^12.0.1",
     "postcss-preset-env": "^6.7.0",
     "tailwindcss": "^1.2.0"
   }

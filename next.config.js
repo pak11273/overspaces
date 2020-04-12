@@ -1,9 +1,6 @@
 const withPlugins = require("next-compose-plugins")
 const optimizedImages = require("next-optimized-images")
 const withImages = require("next-images")
-const withMDX = require("@next/mdx")({
-  extension: /\.(md|mdx)$/,
-})
 const path = require("path")
 
 const prod = process.env.NODE_ENV === "production"
@@ -86,13 +83,11 @@ const crittersConfig = {
   keyframes: "all",
 }
 module.exports = withImages(
-  withMDX(
-    withPlugins(
-      [
-        [new critters(), crittersConfig],
-        [optimizedImages, optimizeImageConfig],
-      ],
-      nextConfig
-    )
+  withPlugins(
+    [
+      [new critters(), crittersConfig],
+      [optimizedImages, optimizeImageConfig],
+    ],
+    nextConfig
   )
 )
