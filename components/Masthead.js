@@ -46,7 +46,7 @@ const Buttons = ({
   )
 }
 
-export const HeroWithAngledImagesOnRight = ({
+export const MastheadWithAngledImagesOnRight = ({
   titleOne,
   titleTwo,
   srcOne,
@@ -104,7 +104,7 @@ export const HeroWithAngledImagesOnRight = ({
   </div>
 )
 
-HeroWithAngledImagesOnRight.propTypes = {
+MastheadWithAngledImagesOnRight.propTypes = {
   titleOne: PropTypes.string.isRequired,
   titleTwo: PropTypes.string,
   srcOne: PropTypes.string,
@@ -117,8 +117,8 @@ HeroWithAngledImagesOnRight.propTypes = {
   buttonTwo: PropTypes.bool,
 }
 
-HeroWithAngledImagesOnRight.defaultProps = {
-  titleOne: "Hero with angled image",
+MastheadWithAngledImagesOnRight.defaultProps = {
+  titleOne: "Masthead with angled image",
   srcImg: "https://via.placeholder.com/900",
   srcOne: "/",
   srcTwo: "/",

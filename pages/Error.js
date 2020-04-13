@@ -1,10 +1,10 @@
-import { Hero } from "../components"
+import { Masthead } from "../components"
 import React from "react"
 
 export default () => {
   return (
     <section className="container mx-auto">
-      <Hero
+      <Masthead
         titleOne="404"
         titleTwo="Error"
         subtitle="Page not found."

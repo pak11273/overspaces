@@ -1,6 +1,8 @@
 module.exports = {
   plugins: [
     "tailwindcss",
+    "postcss-import",
+    "autoprefixer",
     "postcss-preset-env",
     [
       "@fullhuman/postcss-purgecss",
@@ -15,6 +17,3 @@ module.exports = {
     ],
   ],
 }
-
-//     "postcss-import",
-//     "autoprefixer",

@@ -3,14 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "//": "postcss assets/css/tailwind.css -o assets/css/styles.css",
-    "//": "postcss assets/css/tailwind.css -o assets/css/styles.css --watch",
-    "//": "yarn build:styles",
-    "//": "yarn build:styles",
     "dev": "next",
     "build": "next build",
     "start": "next start",
-    "//": "next build && next export"
+    "export": "next build && next export"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
