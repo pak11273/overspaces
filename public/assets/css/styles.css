@@ -1,5 +1,7 @@
 /* purgecss start ignore */
-@tailwind base;
+@import "tailwindcss/base";
 /* purgecss end ignore */
-@tailwind components;
-@tailwind utilities;
+
+@import "tailwindcss/components";
+
+@import "tailwindcss/utilities";

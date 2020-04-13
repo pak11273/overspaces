@@ -9,7 +9,8 @@
     "//": "yarn build:styles",
     "dev": "next",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "//": "next build && next export"
   },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",

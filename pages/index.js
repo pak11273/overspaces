@@ -1,172 +1,70 @@
+import { FeaturedRooms, Services } from "../components"
+
 import Head from "next/head"
-import { Navbar } from "../components"
+import Link from "next/link"
+import React from "react"
+import logo from "../public/assets/images/overspaces.jpg"
 
-const Home = () => (
-  <div className="container">
-    <Head>
-      <title>OverSpaces</title>
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-    <Navbar />
+// const Home = () => (
+//   <div className="container">
+//     <Head>
+//       <title>OverSpaces</title>
+//       <link rel="icon" href="/favicon.ico" />
+//     </Head>
+//     <Navbar />
 
-    <main>
-      <div className="p-4 shadow rounded bg-bg-indigo-700">
-        <h1 className="text-2xl text-indigo-500 leading-normal">Next.js</h1>
-        <p className="text-gray-500">with Tailwind CSS</p>
-      </div>
-    </main>
+//     <main>
+//       <div className="p-4 shadow rounded bg-bg-indigo-700">
+//         <h1 className="text-2xl text-indigo-500 leading-normal">Next.js</h1>
+//         <p className="text-gray-500">with Tailwind CSS</p>
+//       </div>
+//     </main>
 
-    <footer>
-      <a
-        href="https://zeit.co?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by <img src="/zeit.svg" alt="ZEIT Logo" />
-      </a>
-    </footer>
-
-    <style jsx>{`
-      .container {
-        min-height: 100vh;
-        padding: 0 0.5rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      main {
-        padding: 5rem 0;
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-      }
-
-      footer {
-        width: 100%;
-        height: 100px;
-        border-top: 1px solid #eaeaea;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      footer img {
-        margin-left: 0.5rem;
-      }
-
-      footer a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-
-      a {
-        color: inherit;
-        text-decoration: none;
-      }
-
-      .title a {
-        color: #0070f3;
-        text-decoration: none;
-      }
-
-      .title a:hover,
-      .title a:focus,
-      .title a:active {
-        text-decoration: underline;
-      }
-
-      .title {
-        margin: 0;
-        line-height: 1.15;
-        font-size: 4rem;
-      }
-
-      .title,
-      .description {
-        text-align: center;
-      }
-
-      .description {
-        line-height: 1.5;
-        font-size: 1.5rem;
-      }
-
-      code {
-        background: #fafafa;
-        border-radius: 5px;
-        padding: 0.75rem;
-        font-size: 1.1rem;
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-      }
-
-      .grid {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-
-        max-width: 800px;
-        margin-top: 3rem;
-      }
-
-      .card {
-        margin: 1rem;
-        flex-basis: 45%;
-        padding: 1.5rem;
-        text-align: left;
-        color: inherit;
-        text-decoration: none;
-        border: 1px solid #eaeaea;
-        border-radius: 10px;
-        transition: color 0.15s ease, border-color 0.15s ease;
-      }
-
-      .card:hover,
-      .card:focus,
-      .card:active {
-        color: #0070f3;
-        border-color: #0070f3;
-      }
-
-      .card h3 {
-        margin: 0 0 1rem 0;
-        font-size: 1.5rem;
-      }
-
-      .card p {
-        margin: 0;
-        font-size: 1.25rem;
-        line-height: 1.5;
-      }
-
-      @media (max-width: 600px) {
-        .grid {
-          width: 100%;
-          flex-direction: column;
-        }
-      }
-    `}</style>
-
-    <style jsx global>{`
-      html,
-      body {
-        padding: 0;
-        margin: 0;
-        font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-          Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-      }
-
-      * {
-        box-sizing: border-box;
-      }
-    `}</style>
-  </div>
-)
+//   </div>
+// )
+const Home = () => {
+  return (
+    <>
+      <section className="flex bg-green-500">
+        <div className="flex flex-col max-w-4xl px-2 py-8 mx-auto lg:w-1/2 lg:max-w-full lg:px-12 lg:py-12">
+          <img
+            className="self-center object-cover object-bottom w-full h-64"
+            src={logo}
+            alt="overspaces logo"
+          />
+          <img
+            className="self-center object-cover w-full mt-6 rounded-lg shadow-xl lg:hidden h-72 object:center"
+            src="https://images.unsplash.com/photo-1556955112-28cde3817b0a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+            alt="house"
+          />
+          <h1 className="mt-6 text-2xl font-bold leading-tight text-bg-whi">
+            Find<span className="text-brand-blue">properties</span> everywhere.
+          </h1>
+          <p className="mt-2 text-gray-700">
+            Looking for a rental or real estate?
+          </p>
+          <div className="flex justify-start">
+            <div className="mt-4">
+              <input value="zipcode" />
+            </div>
+          </div>
+        </div>
+        <div className="hidden lg:block lg:w-1/2 lg:relative">
+          <img
+            className="inset-0 object-cover w-full h-full"
+            src="https://images.unsplash.com/photo-1556955112-28cde3817b0a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80"
+            alt="house"
+          />
+        </div>
+      </section>
+      <FeaturedRooms />
+      <Services
+        subtitle="Look for the best properties"
+        title="Find the best properties in your location!"
+        description="Property listings are subject to change"
+      />
+    </>
+  )
+}
 
 export default Home
