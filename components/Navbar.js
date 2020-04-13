@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 
+import { FaBell } from "react-icons/fa"
 import Link from "next/link"
 import LogoWhite from "../public/assets/images/logo_white.png"
 import { Settings } from "../components"
@@ -46,7 +47,7 @@ export function Navbar(props) {
       </div>
       <div>
         <ul className={`sm:pr-8 ${navOpen ? "block" : "hidden"} sm:block`}>
-          <div className="py-4 font-semibold text-gray-100 sm:flex">
+          <div className="items-center py-4 font-semibold text-gray-100 sm:flex">
             <div className="p-2 py-1 hover:bg-green-500">
               <a href="/#" alt="navigation dropdown">
                 Rentals
@@ -57,6 +58,7 @@ export function Navbar(props) {
                 For Sale
               </a>
             </div>
+            <FaBell className="hidden ml-3 cursor-pointer sm:block" />
             <Settings />
           </div>
           <div className="px-4 py-4 border-t border-gray-800 sm:hidden">
