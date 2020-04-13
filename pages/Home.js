@@ -20,7 +20,8 @@ export function Home() {
             alt="house"
           />
           <h1 className="mt-6 text-2xl font-bold leading-tight text-bg-whi">
-            Manage <span className="text-brand-blue">properties</span> anywhere.
+            Spammage <span className="text-brand-blue">properties</span>{" "}
+            anywhere.
           </h1>
           <p className="mt-2 text-gray-700">
             Enjoy managing your properties while your in a remote place that
