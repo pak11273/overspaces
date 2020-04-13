@@ -1,7 +1,7 @@
 import { Button } from "./Button"
 import { FeaturedRooms } from "./FeaturedRooms"
-import { HeroWithAngledImagesOnRight as Hero } from "./Hero"
 import { Loading } from "./Loading"
+import { HeroWithAngledImagesOnRight as Masthead } from "./Masthead"
 import { Navbar } from "./Navbar"
 import { Property } from "./Property"
 import { Room } from "./Room"
@@ -10,12 +10,12 @@ import { Settings } from "./Settings"
 
 export {
   FeaturedRooms,
-  Hero,
+  Masthead,
   Navbar,
   Loading,
   Button,
   Property,
   Room,
   Settings,
-  Services
+  Services,
 }

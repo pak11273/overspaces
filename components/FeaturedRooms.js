@@ -18,7 +18,7 @@ export const FeaturedRooms = () => {
 
   return (
     <section className="mx-auto mt-24 text-center">
-      <h3 className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-bg-whi sm:text-4xl sm:leading-10">
+      <h3 className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-indigo-900 sm:text-4xl sm:leading-10">
         Featured Properties
       </h3>
       <section className="grid gap-8 p-12 md:grid-cols-2 lg:grid-cols-3 xl:px-40">

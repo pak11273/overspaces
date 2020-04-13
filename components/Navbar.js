@@ -1,28 +1,34 @@
 import React, { useState } from "react"
 
 import Link from "next/link"
+import LogoWhite from "../public/assets/images/logo_white.png"
 import { Settings } from "../components"
 
 export function Navbar(props) {
   const [navOpen, setNavOpen] = useState(false)
 
   return (
-    <nav className="bg-gray-600 sm:flex sm:justify-between ">
+    <nav className="bg-indigo-500 sm:flex sm:justify-between ">
       <div>
-        <div className="flex items-center justify-between h-16 bg-gray-600">
+        <div className="flex items-center justify-between h-16 ">
           <Link href="/">
-            <img
-              className="h-12"
-              src="https://compass1.org/wp-content/uploads/2017/01/JUSTCOMPASS-ALPHA1.png"
-              alt="logo"
-            />
+            <div className="flex items-center">
+              <img
+                src={LogoWhite}
+                alt="white logo"
+                className="w-8 h-8 ml-8 cursor-pointer"
+              />
+              <h1 className="pl-2 text-2xl font-extrabold text-white cursor-pointer">
+                OverSpaces
+              </h1>
+            </div>
           </Link>
           <button
             onClick={() => setNavOpen(!navOpen)}
             className="text-gray-400 sm:hidden focus:text-white focus:outline-none hover:text-white"
           >
             <svg
-              className="w-12 bg-gray-600 fill-current"
+              className="w-12 pr-4 bg-indigo-500 fill-current"
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 32 32"
             >
@@ -39,21 +45,16 @@ export function Navbar(props) {
         </div>
       </div>
       <div>
-        <ul className={`${navOpen ? "block" : "hidden"} sm:block`}>
-          <div className="px-2 py-3 pb-4 font-semibold text-gray-100 sm:flex">
-            <div className="p-2 py-1 hover:bg-gray-500">
+        <ul className={`sm:pr-8 ${navOpen ? "block" : "hidden"} sm:block`}>
+          <div className="py-4 font-semibold text-gray-100 sm:flex">
+            <div className="p-2 py-1 hover:bg-green-500">
               <a href="/#" alt="navigation dropdown">
-                Looking for a rental
+                Rentals
               </a>
             </div>
-            <div className="p-2 py-1 mt-1 hover:bg-gray-500 sm:mt-0 sm:ml-2">
+            <div className="p-2 py-1 mt-1 hover:bg-green-500 sm:mt-0 sm:ml-2">
               <a href="/#" alt="navigation dropdown">
-                Renting Properties
-              </a>
-            </div>
-            <div className="p-2 py-1 mt-1 hover:bg-gray-500 sm:mt-0 sm:ml-2">
-              <a href="/#" alt="navigation dropdown">
-                Properties for sale
+                For Sale
               </a>
             </div>
             <Settings />
