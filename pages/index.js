@@ -26,7 +26,7 @@ const Home = () => {
             alt="house"
           />
           <h1 className="mt-6 text-2xl font-bold leading-tight text-indigo-800">
-            Lose<span className="text-brand-blue">properties</span> everywhere.
+            Find <span className="text-brand-blue">properties</span> everywhere.
           </h1>
           <p className="mt-2 text-indigo-800">
             Looking for a rental or real estate?
