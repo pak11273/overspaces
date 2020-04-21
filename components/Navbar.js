@@ -55,7 +55,7 @@ export function Navbar(props) {
             </div>
             <div className="p-2 py-1 mt-1 hover:bg-green-500 sm:mt-0 sm:ml-2">
               <a href="/#" alt="navigation dropdown">
-                For Sale
+                ForSale
               </a>
             </div>
             <FaBell className="hidden ml-3 cursor-pointer sm:block" />

@@ -8,9 +8,8 @@ export const FeaturedRooms = () => {
   let { loading, featuredRooms: rooms } = useContext(Context)
 
   rooms = rooms.map((room) => {
-    console.log(room)
     return (
-      <Room key={room.id} {...room}>
+      <Room key={room.id} {...room} hoverText="Featured">
         {room}
       </Room>
     )
@@ -21,7 +20,7 @@ export const FeaturedRooms = () => {
       <h3 className="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-indigo-900 sm:text-4xl sm:leading-10">
         Featured Properties
       </h3>
-      <section className="grid gap-8 p-12 md:grid-cols-2 lg:grid-cols-3 xl:px-40">
+      <section className="grid gap-12 p-12 px-0 md:grid-cols-2 lg:grid-cols-3 xl:px-40">
         {loading ? <Loading color="primary-500" /> : rooms}
       </section>
     </section>

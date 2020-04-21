@@ -1,0 +1,42 @@
+@responsive {
+  .feature__card--300 {
+    width: 300px;
+  }
+
+  .feature__card--400 {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1366px) {
+  .feature__card--1366-400 {
+    width: 400px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .feature__card--1440-425 {
+    width: 425px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .feature__card--1600-425 {
+    width: 425px;
+  }
+  .feature__card--1600-450 {
+    width: 450px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .feature__card--1920-700 {
+    width: 500px;
+  }
+}
+
+@media (min-width: 1920px) {
+  .feature__card--1920-700 {
+    width: 500px;
+  }
+}
