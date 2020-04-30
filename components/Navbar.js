@@ -9,7 +9,7 @@ export function Navbar(props) {
   const [navOpen, setNavOpen] = useState(false)
 
   return (
-    <nav className="bg-indigo-500 sm:flex sm:justify-between ">
+    <nav className="fixed z-10 w-full bg-indigo-500 sm:flex sm:justify-between">
       <div>
         <div className="flex items-center justify-between h-16 ">
           <Link href="/">
