@@ -21,7 +21,7 @@ export const FeaturedRooms = () => {
         Featured Properties
       </h3>
       <section className="grid gap-12 p-12 px-0 md:grid-cols-2 lg:grid-cols-3 xl:px-40">
-        {loading ? <Loading color="primary-500" /> : rooms}
+        {loading ? <Loading color="primary-500 loading-home" /> : rooms}
       </section>
     </section>
   )

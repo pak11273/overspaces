@@ -5,9 +5,12 @@ import { Navbar } from "../components"
 
 export default function MyApp({ Component, pageProps }) {
   return (
-    <ContextProvider>
+    <>
       <Navbar />
-      <Component {...pageProps} />
-    </ContextProvider>
+      <div className="p-8" />
+      <ContextProvider>
+        <Component {...pageProps} />
+      </ContextProvider>
+    </>
   )
 }

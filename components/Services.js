@@ -22,7 +22,7 @@ const services = [
         </div>
       </div>
     ),
-    servicesTitle: "Competitive exchange rates",
+    servicesTitle: "Need help moving?",
     servicesDescription:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
   },
@@ -46,7 +46,7 @@ const services = [
         </div>
       </div>
     ),
-    servicesTitle: "Transfers are instant",
+    servicesTitle: "Check your Credit",
     servicesDescription:
       " Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
   },
@@ -70,7 +70,7 @@ const services = [
         </div>
       </div>
     ),
-    servicesTitle: "Mobile notifications",
+    servicesTitle: "How to rent properties",
     servicesDescription:
       "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
   },

@@ -1,7 +1,6 @@
-import { FeaturedRooms, Masthead, Services } from "../components"
+import { FeaturedRooms, Loading, Masthead, Services } from "../components"
 
 import React from "react"
-import logo from "../public/assets/images/overspaces.png"
 
 const Home = () => {
   return (

@@ -1,3 +1,22 @@
 export default () => {
-  return <div>Property details page</div>
+  return (
+    <>
+      <div>Property details page</div>
+      <div>Property details page</div>
+      <div>Property details page</div>
+      <div>Property details page</div>
+      <div>Property details page</div>
+      <div>Property details page</div>
+      <div>Property details page</div>
+      <div>Property details page</div>
+      <div>Property details page</div>
+      <div>Property details page</div>
+      <div>Property details page</div>
+      <div>Property details page</div>
+      <div>Property details page</div>
+      <div>Property details page</div>
+      <div>Property details page</div>
+      <div>Property details page</div>
+    </>
+  )
 }

@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react"
+import React, { useState } from "react"
+// import { withLayout } from "../components"
 
 import PropTypes from "prop-types"
 
@@ -58,3 +59,5 @@ Room.propTypes = {
     rider2: PropTypes.number.isRequired,
   }),
 }
+
+// export default withLayout(Room)

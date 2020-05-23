@@ -4,7 +4,7 @@ import React from "react"
 
 export const Loading = ({ color, custom, size }) => {
   return (
-    <div className="loading">
+    <div>
       <FaCircleNotch
         className={`transform rotate-45 text-${color} rotate-center mx-auto`}
         color={custom}
