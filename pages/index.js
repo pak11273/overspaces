@@ -1,11 +1,11 @@
-import { FeaturedRooms, Loading, Masthead, Services } from "../components"
+import { FeaturedRooms, MastheadHome, Services } from "../components"
 
 import React from "react"
 
 const Home = () => {
   return (
     <>
-      <Masthead />
+      <MastheadHome />
       <FeaturedRooms />
       <Services
         subtitle="Look for the best properties"

@@ -1,7 +1,7 @@
 import Link from "next/link"
 import PropTypes from "prop-types"
 import React from "react"
-import logo from "../public/assets/images/overspaces.png"
+import logo from "../../public/assets/images/overspaces.png"
 
 const ButtonOne = ({ srcOne, LabelOne }) => (
   <div className="rounded-md shadow">
@@ -47,7 +47,7 @@ const Buttons = ({
   )
 }
 
-export const MastheadWithAngledImagesOnRight = () => (
+export const MastheadHome = () => (
   <>
     <section className="flex bg-green-500">
       <div className="flex flex-col max-w-4xl px-2 py-8 mx-auto lg:w-1/2 lg:max-w-full lg:px-12 lg:py-12">
@@ -109,6 +109,6 @@ export const MastheadWithAngledImagesOnRight = () => (
   </>
 )
 
-MastheadWithAngledImagesOnRight.propTypes = {}
+MastheadHome.propTypes = {}
 
-MastheadWithAngledImagesOnRight.defaultProps = {}
+MastheadHome.defaultProps = {}

@@ -7,11 +7,19 @@ import PropTypes from "prop-types"
 
 const defaultImg = "https://picsum.photos/245/245"
 
-export const Room = ({ hoverText, name, slug, images, price, rider2 }) => {
+export const Room = ({
+  featured,
+  hoverText,
+  name,
+  id,
+  images,
+  price,
+  rider2,
+}) => {
   const [hover, setHover] = useState(false)
 
   return (
-    <a href={`/${slug}`}>
+    <a href={`/room/${id}`}>
       <article
         className="relative mx-auto overflow-hidden bg-white rounded-lg shadow-lg feature__card--300 feature__card--1600-425 feature__card--1920-500 h-72"
         onMouseEnter={() => {
