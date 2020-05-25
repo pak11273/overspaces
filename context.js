@@ -1,9 +1,11 @@
 import React, { useContext, useEffect, useState } from "react"
 
-import Contentful from "./contentful"
 import data from "./data"
 
-Contentful.getEntries().then((res) => console.log("res: ", res.items))
+// import Contentful from "./contentful"
+
+
+// Contentful.getEntries().then((res) => console.log("res: ", res.items))
 
 const Context = React.createContext({})
 
