@@ -10,7 +10,10 @@ const critters = require("critters-webpack-plugin")
 const nextConfig = {
   target: "serverless",
   env: {
-    // env variables here
+    CONTENTFUL_SPACE: "nit232368zlm",
+    CONTENTFUL_ACCESS_TOKEN: "a73Mlw8OsuqbAQ3DSoJzQ5AGDQWRyeCxn4tUUUass4A",
+    // CONTENTFUL_SPACE: process.env.CONTENTFUL_SPACE,
+    // CONTENTFUL_ACCESS_TOKEN: process.env.CONTENTFUL_ACCESS_TOKEN,
   },
   webpack: (config, { dev, isServer }) => {
     // if (isServer) {
@@ -42,6 +45,7 @@ const nextConfig = {
     config.resolve.alias["src"] = path.join(__dirname, "src")
 
     config.optimization.minimizer.push(new OptimizeCSSAssetsPlugin({}))
+
     return config
   },
 }
