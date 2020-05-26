@@ -10,10 +10,11 @@ const critters = require("critters-webpack-plugin")
 const nextConfig = {
   target: "serverless",
   env: {
-    CONTENTFUL_SPACE: "nit232368zlm",
-    CONTENTFUL_ACCESS_TOKEN: "a73Mlw8OsuqbAQ3DSoJzQ5AGDQWRyeCxn4tUUUass4A",
-    // CONTENTFUL_SPACE: process.env.CONTENTFUL_SPACE,
-    // CONTENTFUL_ACCESS_TOKEN: process.env.CONTENTFUL_ACCESS_TOKEN,
+    NEXT_PUBLIC_CONTENTFUL_SPACE: "nit232368zlm",
+    NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN:
+      "a73Mlw8OsuqbAQ3DSoJzQ5AGDQWRyeCxn4tUUUass4A",
+    // NEXT_PUBLIC_CONTENTFUL_SPACE: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE,
+    // NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
   },
   webpack: (config, { dev, isServer }) => {
     // if (isServer) {

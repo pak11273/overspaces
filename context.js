@@ -1,14 +1,8 @@
 import React, { useContext, useEffect, useState } from "react"
 
-import data from "./data"
-
-// import Contentful from "./contentful"
-
-
-// Contentful.getEntries().then((res) => console.log("res: ", res.items))
+import Contentful from "./contentful"
 
 const Context = React.createContext({})
-
 const ContextProvider = (props) => {
   const [state, setState] = useState({
     rooms: [],
@@ -16,6 +10,43 @@ const ContextProvider = (props) => {
     featuredRooms: [],
     loading: true,
   })
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        let entries = await Contentful.getEntries({
+          content_type: "osSpaces",
+          // order: "sys.createdAt",
+          // order: "fields.price",
+          order: "-fields.price",
+        })
+
+        let rooms = formatData(entries.items)
+        let featuredRooms = rooms.filter((room) => room.featured)
+        let maxPrice = Math.max(...rooms.map((v) => v.price))
+        let maxSize = Math.max(...rooms.map((v) => v.size))
+
+        setState({
+          rooms,
+          featuredRooms,
+          sortedRooms: rooms,
+          loading: false,
+          type: "all",
+          capacity: 1,
+          price: 0,
+          minPrice: 0,
+          price: maxPrice,
+          minSize: 0,
+          size: maxSize,
+          breakfast: false,
+          pets: false,
+        })
+      } catch (err) {
+        console.log(err)
+      }
+    }
+    fetchData()
+  }, [])
 
   const formatData = (data) => {
     let tempItems = data.map((item) => {
@@ -49,30 +80,7 @@ const ContextProvider = (props) => {
       breakfast,
       pets,
     } = state
-    console.log("filter rooms!")
   }
-
-  useEffect(() => {
-    let rooms = formatData(data)
-    let featuredRooms = rooms.filter((room) => room.featured)
-    let maxPrice = Math.max(...rooms.map((v) => v.price))
-    let maxSize = Math.max(...rooms.map((v) => v.size))
-    setState({
-      rooms,
-      featuredRooms,
-      sortedRooms: rooms,
-      loading: false,
-      type: "all",
-      capacity: 1,
-      price: 0,
-      minPrice: 0,
-      price: maxPrice,
-      minSize: 0,
-      size: maxSize,
-      breakfast: false,
-      pets: false,
-    })
-  }, [])
 
   return (
     <Context.Provider value={{ ...state, handleChange, filterRooms }}>
