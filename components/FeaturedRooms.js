@@ -6,7 +6,7 @@ import { Room } from "../components"
 
 export const FeaturedRooms = () => {
   let { loading, featuredRooms: rooms } = useContext(Context)
-  console.log("feature: ", featuredRooms)
+  console.log("feature: ", rooms)
 
   rooms = rooms.map((room) => {
     return (
