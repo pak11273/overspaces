@@ -4,8 +4,6 @@ import PropTypes from "prop-types"
 
 // import { withLayout } from "../components"
 
-
-
 // import  Link  from "next/link"
 
 const defaultImg = "https://picsum.photos/245/245"

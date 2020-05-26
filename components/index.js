@@ -8,6 +8,7 @@ import { RoomsFilter, RoomsList } from "./Rooms"
 
 import { Button } from "./Button"
 import { FeaturedRooms } from "./FeaturedRooms"
+import { FeaturedSpaceAd } from "./FeaturedSpaceAd"
 import { Loading } from "./Loading"
 import { Navbar } from "./Navbar"
 import { NotFound } from "./404"
@@ -20,6 +21,7 @@ import { Settings } from "./Settings"
 
 export {
   FeaturedRooms,
+  FeaturedSpaceAd,
   MastheadHome,
   MastheadGeneric,
   MastheadRoom,
