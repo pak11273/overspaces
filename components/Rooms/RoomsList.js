@@ -6,7 +6,7 @@ export const RoomsList = ({ rooms }) => {
       <div className="flex flex-wrap justify-center">
         {rooms.map((v, i) => (
           <div key={i} className="p-12">
-            <Room {...v} />
+            <Room hoverText="Featured" {...v} />
           </div>
         ))}
         {/* filler divs */}

@@ -1,7 +1,10 @@
 import React, { useState } from "react"
-// import { withLayout } from "../components"
 
 import PropTypes from "prop-types"
+
+// import { withLayout } from "../components"
+
+
 
 // import  Link  from "next/link"
 
@@ -48,7 +51,9 @@ export const Room = ({
             // fontSize: "3vw",
           }}
         >
-          <h1 className="text-yellow-400 uppercase xl:text-3xl">{hoverText}</h1>
+          <h1 className="text-center text-yellow-400 uppercase xl:text-3xl">
+            {hoverText}
+          </h1>
         </div>
         <div className="absolute inset-x-0 bottom-0 z-50 pt-2 pb-2 text-2xl font-semibold text-center text-yellow-400 uppercase bg-primary-alpha-50">
           {name}
