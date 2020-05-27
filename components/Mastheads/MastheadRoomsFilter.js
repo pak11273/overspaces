@@ -90,12 +90,11 @@ export const MastheadRoomsFilter = ({ rooms }) => {
               Over<span className="text-indigo-500">Spaces</span>
             </h1>
           </div>
-          <div className="w-full">
+          {/* <div className="w-full">
             <h1 className="mt-6 text-2xl font-bold leading-tight text-indigo-800">
               Search Filter
             </h1>
             <form>
-              {/* select type */}
               <div>
                 <label htmlFor="type">Room Type</label>
                 <select
@@ -107,9 +106,8 @@ export const MastheadRoomsFilter = ({ rooms }) => {
                   {optionTypes}
                 </select>
               </div>
-              {/* eof select type */}
             </form>
-          </div>
+          </div> */}
         </div>
       </section>
     </>
