@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 
+import { Loading } from "./Loading"
 import PropTypes from "prop-types"
 
 // import { withLayout } from "../components"
@@ -19,6 +20,10 @@ export const Room = ({
 }) => {
   const [hover, setHover] = useState(false)
 
+  if (!images) {
+    return <Loading />
+  }
+  console.log("images: ", images[0])
   return (
     <a href={`/room/${id}`}>
       <article

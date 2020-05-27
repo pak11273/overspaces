@@ -23,6 +23,9 @@ const ContextProvider = (props) => {
 
         let rooms = formatData(entries.items)
         let featuredRooms = rooms.filter((room) => room.featured)
+        if (featuredRooms.length > 2) {
+          return featuredRooms.splice(2, featuredRooms.length - 1)
+        }
         let maxPrice = Math.max(...rooms.map((v) => v.price))
         let maxSize = Math.max(...rooms.map((v) => v.size))
 
