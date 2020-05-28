@@ -12,7 +12,7 @@ export function Navbar(props) {
     <nav className="fixed z-10 w-full bg-indigo-500 sm:flex sm:justify-between">
       <div>
         <div className="flex items-center justify-between h-16 ">
-          <Link href="/">
+          <a href="/">
             <div className="flex items-center">
               <img
                 src={LogoWhite}
@@ -23,7 +23,7 @@ export function Navbar(props) {
                 OverSpaces
               </h1>
             </div>
-          </Link>
+          </a>
           <button
             onClick={() => setNavOpen(!navOpen)}
             className="text-gray-400 sm:hidden focus:text-white focus:outline-none hover:text-white"
@@ -49,9 +49,7 @@ export function Navbar(props) {
         <ul className={`sm:pr-8 ${navOpen ? "block" : "hidden"} sm:block`}>
           <div className="items-center py-4 font-semibold text-gray-100 sm:flex">
             <div className="p-2 py-1 mt-1 hover:bg-green-500 sm:mt-0 sm:ml-2">
-              <Link href="/Rooms" alt="navigation dropdown">
-                Rooms
-              </Link>
+              <a href="/Rooms">Rooms</a>
             </div>
             <FaBell className="hidden ml-3 cursor-pointer sm:block" />
             <Settings />
