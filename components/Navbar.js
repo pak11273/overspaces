@@ -51,11 +51,11 @@ export function Navbar(props) {
             <div className="p-2 py-1 mt-1 hover:bg-green-500 sm:mt-0 sm:ml-2">
               <a href="/Rooms">Rooms</a>
             </div>
-            <FaBell className="hidden ml-3 cursor-pointer sm:block" />
-            <Settings />
+            {/* <FaBell className="hidden ml-3 cursor-pointer sm:block" />
+            <Settings /> */}
           </div>
-          <div className="px-4 py-4 border-t border-gray-800 sm:hidden">
-            <div className="flex items-center">
+          {/*  <div className="px-4 py-4 border-t border-gray-800 sm:hidden">
+           <div className="flex items-center">
               <img
                 className="object-cover w-8 h-8 border-2 border-gray-500 rounded-full"
                 src="https://ya-webdesign.com/transparent450_/vector-avatars-employee-5.png"
@@ -63,7 +63,7 @@ export function Navbar(props) {
               />
               <span className="px-2 text-white">Jane Doe</span>
             </div>
-            <div className="">
+             <div className="">
               <a
                 href="/#"
                 className="block mt-4 text-gray-400 hover:text-white"
@@ -83,7 +83,7 @@ export function Navbar(props) {
                 Sign Out
               </a>
             </div>
-          </div>
+  </div> */}
         </ul>
       </div>
     </nav>

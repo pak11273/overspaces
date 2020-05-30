@@ -84,13 +84,13 @@ export const MastheadRoom = ({
         </article>
         <article className="mt-2 text-2xl text-indigo-800">{size} sqft</article>
         <div className="relative w-4/6 mx-auto mt-6 sm:mx-0 sm:w-1/2 text-primary-500">
-          <input
+          {/* <input
             min="0"
             max="10"
             type="number"
             placeholder="ZIPCODE"
             className="w-full h-10 px-5 pr-10 text-sm bg-white rounded-full focus:outline-none"
-          />
+          /> */}
           <button type="submit" className="absolute top-0 right-0 mt-3 mr-4">
             <svg
               className="w-4 h-4 fill-current"
